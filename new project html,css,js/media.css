@@ -1,0 +1,820 @@
+/* ============================================
+   MEDIA QUERIES FOR RESPONSIVE DESIGN
+   ============================================ */
+
+/* ====================================
+   LARGE DESKTOP (1440px and above)
+   ==================================== */
+@media screen and (min-width: 1440px) {
+  .header {
+    padding: 1rem 8%;
+  }
+  
+  .mainpage h1 {
+    font-size: 5rem;
+  }
+  
+  .hero-text h1 {
+    font-size: 3.5rem;
+  }
+  
+  .card-container,
+  .blog-section,
+  .why-decaf,
+  .faqs {
+    padding: 6rem 8%;
+  }
+}
+
+/* ====================================
+   DESKTOP (1200px to 1439px)
+   ==================================== */
+@media screen and (max-width: 1439px) and (min-width: 1200px) {
+  .header {
+    padding: 1rem 6%;
+  }
+  
+  .mainpage h1 {
+    font-size: 4.5rem;
+  }
+  
+  .packet-wrapper img {
+    width: 180px;
+  }
+}
+
+/* ====================================
+   LAPTOP/SMALL DESKTOP (992px to 1199px)
+   ==================================== */
+@media screen and (max-width: 1199px) and (min-width: 992px) {
+  .header {
+    padding: 1rem 4%;
+  }
+  
+  .mainpage h1 {
+    font-size: 3.5rem;
+  }
+  
+  .hero-text h1 {
+    font-size: 2.5rem;
+  }
+  
+  .packet-wrapper {
+    gap: 1.5rem;
+  }
+  
+  .packet-wrapper img {
+    width: 160px;
+  }
+  
+  .card-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+  
+  .blog-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .reasons-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ====================================
+   TABLET (768px to 991px)
+   ==================================== */
+@media screen and (max-width: 991px) and (min-width: 768px) {
+  .header {
+    padding: 1rem 3%;
+  }
+  
+  .navbar ul {
+    gap: 1.5rem;
+  }
+  
+  .navbar ul li a {
+    font-size: 0.9rem;
+  }
+  
+  .logowrap .logo {
+    font-size: 1.8rem;
+  }
+  
+  .mainpage {
+    padding: 0 1.5rem;
+  }
+  
+  .mainpage h1 {
+    font-size: 3rem;
+  }
+  
+  .mainpage p {
+    font-size: 1.1rem;
+  }
+  
+  .mainpage h5 {
+    font-size: 1rem;
+  }
+  
+  .btn {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.9rem;
+  }
+  
+  .packet-wrapper {
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .packet-wrapper img {
+    width: 140px;
+  }
+  
+  .hero-text {
+    padding: 4rem 3%;
+  }
+  
+  .hero-text h1 {
+    font-size: 2.2rem;
+  }
+  
+  .quote-banner p {
+    font-size: 1.3rem;
+  }
+  
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 4rem 3%;
+    gap: 1.5rem;
+  }
+  
+  .blog-section,
+  .why-decaf,
+  .faqs {
+    padding: 4rem 3%;
+  }
+  
+  .blog-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .blog-header h2,
+  .why-decaf-content h2,
+  .faqs-content h2 {
+    font-size: 2.2rem;
+  }
+  
+  .reasons-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .footer {
+    padding: 2.5rem 3% 1rem;
+  }
+  
+  .footer-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .modal-content {
+    width: 85%;
+    margin: 10% auto;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  #popup-image {
+    width: 150px;
+  }
+}
+
+/* ====================================
+   MOBILE LANDSCAPE (576px to 767px)
+   ==================================== */
+@media screen and (max-width: 767px) and (min-width: 576px) {
+  .header {
+    padding: 0.8rem 3%;
+  }
+  
+  .navbar {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar.active {
+    display: block;
+  }
+  
+  .navbar ul {
+    flex-direction: column;
+    padding: 1rem 0;
+    gap: 0;
+  }
+  
+  .navbar ul li {
+    text-align: center;
+    padding: 0.8rem 0;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .navbar ul li:last-child {
+    border-bottom: none;
+  }
+  
+  .hamburger {
+    display: block;
+  }
+  
+  .logowrap .logo {
+    font-size: 1.6rem;
+  }
+  
+  .button2 {
+    gap: 0.8rem;
+  }
+  
+  .button2 i {
+    font-size: 1.1rem;
+  }
+  
+  .mainpage {
+    padding: 0 1rem;
+  }
+  
+  .mainpage h1 {
+    font-size: 2.5rem;
+    line-height: 1.1;
+  }
+  
+  .mainpage p {
+    font-size: 1rem;
+  }
+  
+  .mainpage h5 {
+    font-size: 0.95rem;
+  }
+  
+  .btn {
+    padding: 0.8rem 1.2rem;
+    font-size: 0.85rem;
+  }
+  
+  .shop-coffee {
+    height: 80vh;
+  }
+  
+  .packet-wrapper {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .packet-wrapper img {
+    width: 120px;
+  }
+  
+  .hero-text {
+    padding: 3rem 3%;
+  }
+  
+  .hero-text h1 {
+    font-size: 1.8rem;
+    line-height: 1.2;
+  }
+  
+  .quote-banner {
+    padding: 1.5rem;
+  }
+  
+  .quote-banner p {
+    font-size: 1.1rem;
+  }
+  
+  .card-container {
+    grid-template-columns: 1fr;
+    padding: 3rem 3%;
+    gap: 1.5rem;
+  }
+  
+  .coffee-top {
+    padding: 1.5rem;
+  }
+  
+  .coffee-content {
+    padding: 1.5rem;
+  }
+  
+  .blog-section,
+  .why-decaf,
+  .faqs {
+    padding: 3rem 3%;
+  }
+  
+  .blog-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .blog-header h2,
+  .why-decaf-content h2,
+  .faqs-content h2 {
+    font-size: 2rem;
+  }
+  
+  .reasons-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .reason {
+    padding: 1.5rem;
+  }
+  
+  .reason i {
+    font-size: 2.5rem;
+  }
+  
+  .footer {
+    padding: 2rem 3% 1rem;
+  }
+  
+  .footer-content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  
+  .modal-content {
+    width: 90%;
+    margin: 15% auto;
+    padding: 1.5rem;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  #popup-image {
+    width: 120px;
+  }
+}
+
+/* ====================================
+   MOBILE PORTRAIT (320px to 575px)
+   ==================================== */
+@media screen and (max-width: 575px) {
+  .header {
+    padding: 0.8rem 4%;
+  }
+  
+  .navbar {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar.active {
+    display: block;
+  }
+  
+  .navbar ul {
+    flex-direction: column;
+    padding: 1rem 0;
+    gap: 0;
+  }
+  
+  .navbar ul li {
+    text-align: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .navbar ul li:last-child {
+    border-bottom: none;
+  }
+  
+  .navbar ul li a {
+    font-size: 1rem;
+  }
+  
+  .hamburger {
+    display: block;
+  }
+  
+  .logowrap .logo {
+    font-size: 1.5rem;
+  }
+  
+  .button2 {
+    gap: 0.6rem;
+  }
+  
+  .button2 i {
+    font-size: 1rem;
+  }
+  
+  .home {
+    height: 100vh;
+    padding: 0 1rem;
+  }
+  
+  .mainpage {
+    padding: 0 0.5rem;
+  }
+  
+  .mainpage h1 {
+    font-size: 2rem;
+    line-height: 1.1;
+    margin-bottom: 0.8rem;
+  }
+  
+  .mainpage p {
+    font-size: 0.9rem;
+    margin-bottom: 0.8rem;
+  }
+  
+  .mainpage h5 {
+    font-size: 0.85rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .btn {
+    padding: 0.7rem 1rem;
+    font-size: 0.8rem;
+    border-radius: 25px;
+  }
+  
+  .shop-coffee {
+    height: 70vh;
+  }
+  
+  .packet-wrapper {
+    flex-direction: column;
+    gap: 0.8rem;
+    padding: 1rem;
+  }
+  
+  .packet-wrapper img {
+    width: 100px;
+  }
+  
+  .hero-text {
+    padding: 2.5rem 4%;
+  }
+  
+  .hero-text h1 {
+    font-size: 1.5rem;
+    line-height: 1.3;
+    margin-bottom: 1.5rem;
+  }
+  
+  .quote-banner {
+    padding: 1.2rem;
+    margin-top: 1.5rem;
+  }
+  
+  .quote-banner p {
+    font-size: 1rem;
+  }
+  
+  .card-container {
+    grid-template-columns: 1fr;
+    padding: 2.5rem 4%;
+    gap: 1.2rem;
+  }
+  
+  .coffee-card {
+    border-radius: 10px;
+  }
+  
+  .coffee-top {
+    padding: 1.2rem;
+  }
+  
+  .coffee-top h3 {
+    font-size: 1.3rem;
+  }
+  
+  .coffee-image {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .coffee-content {
+    padding: 1.2rem;
+  }
+  
+  .coffee-content p {
+    font-size: 0.9rem;
+  }
+  
+  .blog-section,
+  .why-decaf,
+  .faqs {
+    padding: 2.5rem 4%;
+  }
+  
+  .blog-grid {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+  
+  .blog-header h2,
+  .why-decaf-content h2,
+  .faqs-content h2 {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+  
+  .blog-header p {
+    font-size: 1rem;
+  }
+  
+  .blog-post img {
+    height: 150px;
+  }
+  
+  .blog-content {
+    padding: 1.2rem;
+  }
+  
+  .blog-content h3 {
+    font-size: 1.1rem;
+  }
+  
+  .blog-content p {
+    font-size: 0.9rem;
+  }
+  
+  .reasons-grid {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+  
+  .reason {
+    padding: 1.2rem;
+  }
+  
+  .reason i {
+    font-size: 2rem;
+  }
+  
+  .reason h3 {
+    font-size: 1.3rem;
+  }
+  
+  .reason p {
+    font-size: 0.9rem;
+  }
+  
+  .faq-item {
+    margin-bottom: 0.8rem;
+  }
+  
+  .faq-question {
+    padding: 1.2rem;
+  }
+  
+  .faq-question h3 {
+    font-size: 1rem;
+  }
+  
+  .faq-answer {
+    padding: 0 1.2rem 1.2rem;
+    font-size: 0.9rem;
+  }
+  
+  .footer {
+    padding: 2rem 4% 1rem;
+  }
+  
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    text-align: center;
+  }
+  
+  .footer-section h3,
+  .footer-section h4 {
+    font-size: 1.1rem;
+  }
+  
+  .footer-section p,
+  .footer-section ul li a {
+    font-size: 0.9rem;
+  }
+  
+  .social-links {
+    justify-content: center;
+  }
+  
+  .footer-bottom {
+    font-size: 0.8rem;
+    padding-top: 1.5rem;
+  }
+  
+  .modal-content {
+    width: 95%;
+    margin: 20% auto;
+    padding: 1.2rem;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .close {
+    top: 0.8rem;
+    right: 1rem;
+    font-size: 1.5rem;
+  }
+  
+  #popup-image {
+    width: 100px;
+  }
+  
+  .popup-info h3 {
+    font-size: 1.2rem;
+  }
+  
+  .popup-info p {
+    font-size: 0.9rem;
+  }
+  
+  .popup-price {
+    font-size: 1.3rem;
+  }
+  
+  .add-to-cart {
+    padding: 0.7rem 1.2rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* ====================================
+   EXTRA SMALL MOBILE (below 320px)
+   ==================================== */
+@media screen and (max-width: 319px) {
+  .header {
+    padding: 0.6rem 3%;
+  }
+  
+  .logowrap .logo {
+    font-size: 1.3rem;
+  }
+  
+  .mainpage h1 {
+    font-size: 1.8rem;
+  }
+  
+  .hero-text h1 {
+    font-size: 1.3rem;
+  }
+  
+  .card-container,
+  .blog-section,
+  .why-decaf,
+  .faqs {
+    padding: 2rem 3%;
+  }
+  
+  .blog-header h2,
+  .why-decaf-content h2,
+  .faqs-content h2 {
+    font-size: 1.6rem;
+  }
+  
+  .packet-wrapper img {
+    width: 80px;
+  }
+  
+  .modal-content {
+    width: 98%;
+    margin: 25% auto;
+    padding: 1rem;
+  }
+}
+
+/* ====================================
+   LANDSCAPE ORIENTATION FIXES
+   ==================================== */
+@media screen and (max-height: 500px) and (orientation: landscape) {
+  .home {
+    height: auto;
+    min-height: 100vh;
+    padding: 5rem 2rem 2rem;
+  }
+  
+  .mainpage h1 {
+    font-size: 2.5rem;
+  }
+  
+  .shop-coffee {
+    height: auto;
+    min-height: 70vh;
+    padding: 2rem 0;
+  }
+  
+  .packet-wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+/* ====================================
+   HIGH DPI / RETINA DISPLAYS
+   ==================================== */
+@media screen and (-webkit-min-device-pixel-ratio: 2),
+       screen and (min-resolution: 192dpi) {
+  .coffee-image,
+  .blog-post img,
+  .backgroundimage img {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+  }
+}
+
+/* ====================================
+   PRINT STYLES
+   ==================================== */
+@media print {
+  .header,
+  .hamburger,
+  .button2,
+  .modal,
+  .btn,
+  .add-to-cart {
+    display: none !important;
+  }
+  
+  body {
+    font-size: 12pt;
+    line-height: 1.4;
+    color: #000;
+  }
+  
+  .home,
+  .shop-coffee {
+    height: auto;
+    background: none;
+    color: #000;
+  }
+  
+  .mainpage {
+    padding: 2rem 0;
+  }
+  
+  .hero-text,
+  .card-container,
+  .blog-section,
+  .why-decaf,
+  .faqs {
+    padding: 1rem 0;
+  }
+  
+  .coffee-card,
+  .blog-post,
+  .faq-item {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+}
+
+/* ====================================
+   ACCESSIBILITY IMPROVEMENTS
+   ==================================== */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  /* Dark mode styles can be added here if needed */
+}
+
+/* ====================================
+   HOVER STATES FOR TOUCH DEVICES
+   ==================================== */
+@media (hover: none) and (pointer: coarse) {
+  .coffee-card:hover,
+  .blog-post:hover,
+  .reason:hover {
+    transform: none;
+  }
+  
+  .btn:hover,
+  .add-to-cart:hover {
+    transform: none;
+    box-shadow: none;
+  }
+}
