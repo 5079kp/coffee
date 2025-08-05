@@ -1,33 +1,316 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wimp</title>
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="media.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
+
 <body>
-    
-    <div id="main">
-        <div id="page1">
-            <video autoplay loop muted src="imges and vidiedo/reel-short-mobile.mp4"></video>
+<!-- Header Section Start -->
+<header class="header">
+  <div class="logowrap">
+    <a href="#" class="logo" id="logoText">Wimp</a>
+  </div>
+  <nav class="navbar" id="navbar">
+    <ul>
+      <li><a href="#Shop Coffee">Shop Coffee</a></li>
+      <li><a href="#The Blog">The Blog</a></li>
+      <li><a href="#Why Decaf">Why Decaf</a></li>
+      <li><a href="#FAQs">FAQs</a></li>
+    </ul>
+  </nav>
 
-            <div class="page1-content">
-            <nav>
-            <h3>The venture Agency.</h3>
-            <h4>Menu</h4>
-            </nav>
-            </div>
+  <div class="button2">
+    <i class="fa-regular fa-user"></i>
+    <i class="fa-solid fa-cart-shopping"></i>
+  </div>
 
-        </div>
+  <div class="hamburger" onclick="toggleMenu()">
+    <i class="fa-solid fa-bars"></i>
+  </div>
+</header>
+
+<!-- Header Section End -->
+
+<!--home section start-->
+<section class="home">
+  <div class="mainpage">
+    <h1>
+      <span class="letter-container">
+        <span id="de" class="letter">De</span>
+        <span id="re" class="letter">Re</span>
+      </span>think Decaf
+    </h1>
+
+    <p>Decaf is bad coffee for weak people</p>
+    <h5>The underdog of coffee has sucked for too long. So<br> Wimp is redefining decaf from the grounds up.</h5>
+    <button class="btn" id="shopButton">SHOP OUR DECAFS</button>
+  </div>
+</section>
+<!--home section end-->
+
+<!-- Shop Coffee Section Start -->
+<section class="shop-coffee" id="Shop Coffee">
+  <div class="backgroundimage">
+    <img src="images/coffe1.webp" alt="">
+  </div>
+
+  <div class="packet-wrapper">
+    <div class="coffipacket1">
+      <img src="images/krubiks1.webp" alt="Coffee Packet 1" class="popup-trigger" />
     </div>
+    <div class="coffipacket2">
+      <img src="images/krubiks2.webp" alt="Coffee Packet 2" class="popup-trigger" />
+    </div>
+    <div class="coffipacket3">
+      <img src="images/krubiks3.webp" alt="Coffee Packet 3" class="popup-trigger" />
+    </div>
+  </div>
+</section>
+<!-- Shop Coffee Section End -->
 
+<!--Hero Text Section Start-->
+<section class="hero-text">
+  <h1>
+    The people said decaf <br />
+    deserves damn <span class="highlight">great taste</span>,
+    <span class="highlight">more choices</span>, and <br />
+    <span class="highlight">cleaner processes</span>.
+  </h1>
 
+  <div class="quote-banner">
+    <p>When the people speak — we listen.</p>
+  </div>
+</section>
+<!--Hero Text Section End-->
 
+<!-- Coffee Cards Section Start -->
+<div class="card-container">
+  <!-- Card 1 -->
+  <div class="coffee-card">
+    <div class="coffee-top orange">
+      <img class="coffee-image" src="images/coffee-cup1.webp" alt="Coffee Cup 1">
+      <h3>Great Taste</h3>
+    </div>
+    <div class="coffee-content">
+      <p>Premium decaf that doesn't compromise on flavor. Our careful roasting process ensures every cup delivers the rich, bold taste you expect from great coffee.</p>
+    </div>
+  </div>
 
+  <!-- Card 2 -->
+  <div class="coffee-card">
+    <div class="coffee-top blue">
+      <img class="coffee-image" src="images/coffee-cup2.webp" alt="Coffee Cup 2">
+      <h3>More Choices</h3>
+    </div>
+    <div class="coffee-content">
+      <p>From light to dark roasts, single origins to blends. We offer the widest selection of premium decaf options to suit every palate and brewing method.</p>
+    </div>
+  </div>
 
+  <!-- Card 3 -->
+  <div class="coffee-card">
+    <div class="coffee-top green">
+      <img class="coffee-image" src="images/coffee-cup3.webp" alt="Coffee Cup 3">
+      <h3>Cleaner Process</h3>
+    </div>
+    <div class="coffee-content">
+      <p>Our Swiss Water Process removes caffeine naturally, without chemicals. It's better for you and better for the environment.</p>
+    </div>
+  </div>
+</div>
+<!-- Coffee Cards Section End -->
 
-    <script src="script.js"></script>
+<!-- The Blog Section Start -->
+<section class="blog-section" id="The Blog">
+  <div class="blog-header">
+    <h2>The Blog</h2>
+    <p>Stories, insights, and everything decaf</p>
+  </div>
+  
+  <div class="blog-grid">
+    <article class="blog-post">
+      <img src="images/blog1.webp" alt="Blog Post 1">
+      <div class="blog-content">
+        <h3>The Science Behind Swiss Water Process</h3>
+        <p>Discover how we remove caffeine while preserving flavor...</p>
+        <a href="#" class="read-more">Read More</a>
+      </div>
+    </article>
+    
+    <article class="blog-post">
+      <img src="images/blog2.webp" alt="Blog Post 2">
+      <div class="blog-content">
+        <h3>Why Decaf Doesn't Have to Suck</h3>
+        <p>Breaking down the myths and misconceptions...</p>
+        <a href="#" class="read-more">Read More</a>
+      </div>
+    </article>
+    
+    <article class="blog-post">
+      <img src="images/blog3.webp" alt="Blog Post 3">
+      <div class="blog-content">
+        <h3>The Perfect Decaf Brewing Guide</h3>
+        <p>Tips and tricks for the best cup every time...</p>
+        <a href="#" class="read-more">Read More</a>
+      </div>
+    </article>
+  </div>
+</section>
+<!-- The Blog Section End -->
+
+<!-- Why Decaf Section Start -->
+<section class="why-decaf" id="Why Decaf">
+  <div class="why-decaf-content">
+    <h2>Why Choose Decaf?</h2>
+    <div class="reasons-grid">
+      <div class="reason">
+        <i class="fa-solid fa-heart"></i>
+        <h3>Better Sleep</h3>
+        <p>Enjoy coffee any time without disrupting your sleep cycle</p>
+      </div>
+      <div class="reason">
+        <i class="fa-solid fa-leaf"></i>
+        <h3>Less Anxiety</h3>
+        <p>All the ritual and taste without the jitters</p>
+      </div>
+      <div class="reason">
+        <i class="fa-solid fa-clock"></i>
+        <h3>Anytime Enjoyment</h3>
+        <p>Morning, noon, or night - coffee whenever you want</p>
+      </div>
+      <div class="reason">
+        <i class="fa-solid fa-smile"></i>
+        <h3>Health Benefits</h3>
+        <p>All the antioxidants and benefits of coffee, minus the caffeine</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Why Decaf Section End -->
+
+<!-- FAQs Section Start -->
+<section class="faqs" id="FAQs">
+  <div class="faqs-content">
+    <h2>Frequently Asked Questions</h2>
+    
+    <div class="faq-item">
+      <div class="faq-question">
+        <h3>How is your decaf processed?</h3>
+        <i class="fa-solid fa-chevron-down"></i>
+      </div>
+      <div class="faq-answer">
+        <p>We use the Swiss Water Process, a chemical-free method that removes 99.9% of caffeine while preserving the coffee's original flavor profile.</p>
+      </div>
+    </div>
+    
+    <div class="faq-item">
+      <div class="faq-question">
+        <h3>Does decaf really taste as good as regular coffee?</h3>
+        <i class="fa-solid fa-chevron-down"></i>
+      </div>
+      <div class="faq-answer">
+        <p>When done right, absolutely! Our careful processing and roasting ensures that our decaf maintains the complex flavors and aromas you love in coffee.</p>
+      </div>
+    </div>
+    
+    <div class="faq-item">
+      <div class="faq-question">
+        <h3>How much caffeine is in your decaf?</h3>
+        <i class="fa-solid fa-chevron-down"></i>
+      </div>
+      <div class="faq-answer">
+        <p>Our decaf contains less than 0.1% caffeine - that's about 2-3mg per cup compared to 95mg in regular coffee.</p>
+      </div>
+    </div>
+    
+    <div class="faq-item">
+      <div class="faq-question">
+        <h3>What's your return policy?</h3>
+        <i class="fa-solid fa-chevron-down"></i>
+      </div>
+      <div class="faq-answer">
+        <p>We offer a 30-day satisfaction guarantee. If you're not happy with your order, we'll refund it or send you a replacement.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- FAQs Section End -->
+
+<!-- Footer Section Start -->
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-section">
+      <h3>Wimp</h3>
+      <p>Redefining decaf from the grounds up.</p>
+      <div class="social-links">
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+      </div>
+    </div>
+    
+    <div class="footer-section">
+      <h4>Shop</h4>
+      <ul>
+        <li><a href="#">All Coffee</a></li>
+        <li><a href="#">Subscriptions</a></li>
+        <li><a href="#">Gift Cards</a></li>
+        <li><a href="#">Merch</a></li>
+      </ul>
+    </div>
+    
+    <div class="footer-section">
+      <h4>Learn</h4>
+      <ul>
+        <li><a href="#">The Blog</a></li>
+        <li><a href="#">Brewing Guides</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    
+    <div class="footer-section">
+      <h4>Support</h4>
+      <ul>
+        <li><a href="#">FAQs</a></li>
+        <li><a href="#">Shipping</a></li>
+        <li><a href="#">Returns</a></li>
+        <li><a href="#">Help Center</a></li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="footer-bottom">
+    <p>&copy; 2024 Wimp Coffee. All rights reserved.</p>
+  </div>
+</footer>
+<!-- Footer Section End -->
+
+<!-- Popup Modal for Coffee Packets -->
+<div id="popup-modal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img id="popup-image" src="" alt="Coffee Packet">
+    <div class="popup-info">
+      <h3 id="popup-title">Coffee Name</h3>
+      <p id="popup-description">Coffee description goes here...</p>
+      <div class="popup-price">$19.99</div>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
