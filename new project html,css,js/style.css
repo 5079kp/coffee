@@ -1,0 +1,56 @@
+@font-face {
+  font-family: 'MyCustomFont';
+  src: url('fonts/custom-font.ttf') format('truetype');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'MyCustomFont', sans-serif;
+
+  }
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+#page1 {
+  height: 100vh;
+  background-color: #dedede;
+  position: relative;
+}
+
+#page1 video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  z-index: 1;
+}
+
+.page1-content {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  z-index:2;
+  color: #ffffff;
+}
+
+nav {
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+ 
+ padding:3vw 3vw;
+}
+nav h3 
+{
+    font-size:1.4vw;
+}
+nav h4
+{
+    font-size:1.4vw;
+}
